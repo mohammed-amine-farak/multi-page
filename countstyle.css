@@ -1,0 +1,137 @@
+.parente {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("assets/images/istockphoto-1398630614-612x612.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.child {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cheldren {
+    margin-left: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.inputs {
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+.inputs input {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.kids {
+    height: auto; 
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.inputs p {
+    font-size: 25px;
+    color: orangered;
+}
+
+.child2 {
+    margin-top: 20px; 
+    margin-right: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.space{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .cheldren, .child2 {
+        width: 80%;
+    }
+    .inputs, .kids {
+        max-width: 80%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .space{
+        display: flex;
+        height: 50vh;
+        width: 100%;
+       background-color :#292929; 
+    }
+    .child {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cheldren, .child2 {
+        width: 100%;
+    }
+    .inputs, .kids {
+        max-width: 100%;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .space{
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+    }
+    .cheldren, .child2 {
+        height: auto;
+       
+    }
+    .inputs {
+        height: auto;
+    }
+    .title1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: px) {
+    .space{
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+    }
+    .cheldren, .child2 {
+        height: auto;
+       
+    }
+    .inputs {
+        height: auto;
+    }
+    .title1 {
+        font-size: 30px;
+    }
+}
+
